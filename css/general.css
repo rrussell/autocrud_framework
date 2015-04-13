@@ -1,0 +1,565 @@
+@charset "utf-8";
+/*** Generales ***/
+
+* {
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	font-family:"Trebuchet MS";
+	font-size:12px;
+	/*font-stretch:normal;*/
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	color:#000000;
+	cursor:default;
+}
+
+img {
+	border:0px;
+}
+
+input {
+	font-family:"Trebuchet MS";
+	font-size:12px;
+	/*font-stretch:normal;*/
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	color:#000000;
+}
+
+select {
+	font-family:"Trebuchet MS";
+	font-size:12px;
+	/*font-stretch:normal;*/
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	color:#000000;
+}
+
+textarea {
+	font-family:"Trebuchet MS";
+	font-size:12px;
+	/*font-stretch:normal;*/
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	color:#000000;
+}
+
+a {
+	color:#000000;
+	text-decoration:none;
+}
+
+a:active {
+	color:#000000;
+}
+
+a:focus {
+	color:#000000;
+}
+
+a:hover {
+	color:#000000;
+	text-decoration:underline;
+}
+
+a:link {
+	color:#000000;
+}
+
+a:visited {
+	color:#000000;
+}
+
+#content {
+	width:1024px;
+	margin:0 auto 0 auto;
+	border: solid #AAA;
+	border-width: 0px 1px 1px 1px;
+	text-align: left;
+	-moz-box-shadow: 0px 0px 10px #662;
+	-moz-border-radius: 10px;
+}
+
+#loading {
+	position:fixed;
+	display:none;
+	-moz-border-radius:0px 0px 3px 3px;
+	-webkit-border-radius:0px 0px 5px 5px;
+	border-radius:0px 0px 5px 5px;
+	border:1px solid #FF0000;
+	background-color:#FFFFFF;
+	padding:3px 20px;
+	z-index:9999999;
+	text-align:center;
+	letter-spacing:2px;
+	margin:0px auto 0px auto;
+	top:0px;
+	left:44%;
+}
+
+#header {
+	background-color:#000000;
+	font-size:20px;
+	color:#FFFFFF;
+	padding:20px;
+	margin:0px 0px 0px 0px;
+}
+
+#header a {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+#menu {
+	text-align:right;
+	background-color:#000000;
+	font-size:12px;
+	color:#FFFFFF;
+	margin:2px 0px 0px 0px;
+	padding:0px 8px 0px 0px;
+}
+
+#menu table {
+	width:100%;
+}
+
+#menu td.link {
+	width:190px;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+#menu td:hover.link {
+	background-color:#FF0000;
+	cursor:pointer;
+}
+
+#menu a {
+	color:#FFFFFF;
+}
+
+#menu a:hover {
+	text-decoration:none;
+}
+
+#contenido {
+	padding:20px;
+}
+
+#paginacion {
+	margin:20px 0px 0px 0px;
+	text-align:center;
+}
+
+#paginacion span {
+	padding:1px 6px;
+	border:1px solid #8D0000;
+	background-color:#FFB2B2;
+	color:#8D0000;
+}
+
+#paginacion a {
+	padding:1px 6px;
+	border:1px solid #8D0000;
+	background-color:#FFD9D9;
+	color:#8D0000;
+}
+
+#paginacion a:hover {
+	background-color:#FFB2B2;
+	text-decoration:none;
+}
+
+#footer {
+	margin:0px;
+	font-size:11px;
+	background-color:#000000;
+	color:#FFFFFF;
+	text-align:center;
+	padding:8px 0px 8px 0px;
+}
+
+#footer a {
+	color:#FF0000;
+	text-decoration:none;
+}
+
+#footer a:hover {
+	text-decoration:underline;
+	font-weight:normal;
+	border:none;
+}
+
+.mensaje_error {
+	-moz-border-radius:0px 0px 3px 3px;
+	border:1px solid #FF0000;
+	background-color:#FFC766;
+	padding:5px;
+	z-index:9999999;
+	text-align:center;
+	letter-spacing:2px;
+	margin:0px auto 0px auto;
+	position:fixed;
+	top:0px;
+	left:24%;
+	width:50%;
+}
+
+.mensaje_ok {
+	-moz-border-radius:0px 0px 3px 3px;
+	border:1px solid #008000;
+	background-color:#E4FFC2;
+	padding:5px;
+	margin:0px auto 0px auto;
+	z-index:9999999;
+	text-align:center;
+	letter-spacing:2px;
+	position:fixed;
+	top:0px;
+	left:24%;
+	width:50%;
+}
+
+.tabla {
+	margin:0px;
+	padding:0px;
+	border:none;
+	width:100%;
+	font-size:12px;
+	text-align:center;
+	z-index:1;
+}
+
+.tabla a {
+	color:#0000FF;
+	text-decoration:none;
+}
+
+.tabla a:hover {
+	text-decoration:underline;
+}
+
+.tabla caption {
+	font-size:16px;
+	font-weight:bold;
+	text-align:left;
+	margin:-25px 0px 20px 0px;
+}
+
+.tabla th {
+	border: groove #FF0000;
+	padding:0px 0px 0px 0px;
+	border-width:0px 0px 3px 0px;
+}
+
+.tabla td {
+	border:none;
+	padding:2px;
+}
+
+.tabla th.filtros {
+    border: groove #FF0000;
+    padding:0px 0px 0px 0px;
+    border-width:0px 0px 3px 0px;
+    background-color:#FFA042;
+}
+
+.tabla th.filtros input {
+    font-style: italic;
+    color: #666;
+    width:120px;
+}
+
+.tabla tr:hover td {
+	background-color:#FFD9D9;
+}
+
+.tabla tr.nueva td {
+	color:#FF0000;
+	font-weight:bold;
+	
+}
+
+.opciones {
+	cursor:pointer;
+}
+
+.tabla .opciones:hover {
+	color:#0000FF;
+}
+
+.formulario label {
+	width:150px;
+	display:inline-block;
+	margin:10px 0px;
+	cursor:pointer;
+	border-bottom:1px solid #C0C0C0;
+}
+
+.formulario label:hover {
+	border-bottom:1px dashed #C0C0C0;
+}
+
+.formulario select {
+	margin:0px 0px 0px 0px;
+	width:160px;
+}
+
+.formulario select:hover {
+	border:1px dashed #969696;
+}
+
+.formulario input {
+	background-color:#FFFFFF;
+	border:1px solid #969696;
+	padding:1px;
+	bor
+	margin:0px 0px 0px 0px;
+	width:157px;
+}
+
+.formulario input:hover {
+	background-color:#FFFFFF;
+	border:1px dashed #969696;
+	padding:1px;
+}
+
+.formulario .check {
+	margin:0px 0px 0px 0px;
+	width:10px;
+}
+
+.formulario table {
+	margin:0px 0px 0px 180px;
+}
+
+.formulario span {
+	color:#808080;
+	font-size:10px;
+	font-style:italic;
+}
+
+.formulario textarea {
+	width:660px;
+	height:50px;
+}
+
+.formulario textarea:hover {
+	border:1px dashed #969696;
+	padding:1px;
+}
+
+a.boton {
+	-moz-border-radius:3px 3px 3px 3px;
+	float:right;
+	margin:0px;
+	border:1px solid #AAAAAA;
+	color:#000000;
+	cursor:pointer;
+	font-size:12px;
+	padding:5px 15px;
+	text-decoration:none;
+}
+
+a.boton:hover {
+	-moz-border-radius:3px 3px 3px 3px;
+	border:1px inset #000000;
+	padding:5px 15px;
+}
+
+input.boton {
+	-moz-border-radius:3px 3px 3px 3px;
+	margin:0px;
+	border:1px solid #AAAAAA;
+	color:#000000;
+	cursor:pointer;
+	font-size:12px;
+	padding:5px 15px;
+	text-decoration:none;
+	width:157px;
+}
+
+input.boton:hover {
+	-moz-border-radius:3px 3px 3px 3px;
+	border:1px inset #000000;
+	color:#808080;
+	background-color:#EAEAEA;
+	padding:5px 15px;
+}
+
+/*** Fin Generales ***/
+
+/*** Errores en Formularios ***/
+
+label.error {
+	background:url('../images/iconos/exclamation.png') no-repeat;
+	color:#FF0000;
+	padding:0px 0px 0px 18px;
+	margin:0px 0px 0px 10px;
+	width:400px;
+	border:none;
+	cursor:default;
+}
+
+label.error:hover {
+	border:none;
+}
+
+input.error {
+	border:1px solid #FF0000;
+	padding:1px;
+}
+
+input.error:hover {
+	border:1px dashed #FF0000;
+	padding:1px;
+}
+
+select.error {
+	border:1px solid #FF0000;
+}
+
+select.error:hover {
+	border:1px dashed #FF0000;
+}
+
+textarea.error {
+	border:1px solid #FF0000;
+	padding:1px;
+}
+
+textarea.error:hover {
+	border:1px dashed #FF0000;
+	padding:1px;
+}
+/*** Fin Errores en Formularios ***/
+
+.botones {
+	margin:30px 0px 0px 0px;
+	text-align:center;
+}
+
+.panel_grupo {
+	text-align:left;
+	color:#FFFFFF;
+	background-color:#800000;
+	padding:5px;
+}
+
+.disabled {
+	color:#969696;
+}
+
+.align_center {
+	text-align:center;
+}
+
+.clear_both {
+	clear:both;
+}
+
+.font_bold {
+	font-weight:bold;
+}
+
+.italic {
+	font-style:italic;
+}
+
+.pointer {
+	cursor:pointer;
+}
+
+.help {
+	cursor:help;
+}
+
+.dpreview {
+	width:250px;
+	height:250px;
+	overflow:hidden;
+	margin:0px 0px 0px 30px;
+}
+
+#link_crop {
+	font-size:14px;
+	color:#0000FF;
+}
+
+#box_recortar {
+	
+}
+
+/** Panel de Control **/
+a.panel {
+	
+}
+
+a.panel:hover {
+	color:#800000;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.apanel {
+	width:215px;
+	padding:20px 0px;
+	margin:0px;
+	float:left;
+}
+
+#paint {
+	width:22px;
+	height:22px;
+	background-color:#FFFFFF;
+	border:none;
+	float:left;
+	margin:0px 5px 0px 0px;
+}
+
+/** Pop-Up **/
+#capa {
+	position:fixed;
+	left:0;
+	top:0;
+	z-index:9000;
+	background-color:#000;
+	display:none;
+}
+  
+#boxes .window {
+	position:fixed;
+	left:0;
+	top:0;
+	display:none;
+	z-index:9999;
+	background-color:#FFFFFF;
+	padding:20px;
+	border: solid 8px #C0C0C0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	text-align:center;
+}
+
+#boxes .formulario table {
+	margin:0px 0px 0px 0px;
+}
+
+#boxes label.error {
+	background:url('../images/iconos/exclamation.png') no-repeat;
+	color:#FF0000;
+	padding:0px 0px 0px 18px;
+	margin:0px 0px 0px 10px;
+	width:170px;
+	border:none;
+	cursor:default;
+}
+/** Fin Pop-Up **/

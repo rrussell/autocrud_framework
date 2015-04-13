@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+
+body {
+	background: #1E1E1E;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #00AEEF;
+}
+
+h2 {
+	color: #00AEEF;
+	font-size: 20px;
+	font-weight: bold;
+	cursor:default;
+}
+
+input {
+	font-family: sans-serif;
+}
+
+textarea {
+	font-family: sans-serif;
+}
+
+#content {
+	width: 940px; 
+	background: #1E1E1E;
+	margin: 0 auto 0 auto;
+	text-align: left;
+}
+
+#header {
+	height: 100px;
+	font-size: 20px;
+	padding: 10px 10px 0px 10px;
+	margin: 0px;
+}
+
+#header a {
+	color: #838383;
+	text-decoration: none;
+}
+
+#header a:hover {
+	color: #00AEEF;
+}
+
+#footer {
+	margin: 0px;
+	background-color: #40403E;
+	text-decoration: none;
+	color: #838383;
+	padding: 10px 25px 25px 25px;
+	border-top: solid #838383;
+	border-width: 1px;
+}
+
+#footer a {
+	color:#838383;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	color:#00AEEF;
+}
+
+.clear {
+    clear: both;
+}
+
+label.error {
+	background: url('../images/iconos/exclamation.png') no-repeat;
+	color: #FF0000;
+	padding: 2px 0px 0px 18px;
+	margin: 0px 0px 0px 10px;
+	width: 400px;
+	border: none;
+	cursor: default;
+	font-size: 12px;
+}
